@@ -41,6 +41,6 @@ const toggle = document.querySelector('.menu-toggle');
 const header = document.querySelector('.main-header');
 
 toggle.addEventListener('click', () => {
-  header.classList.toggle('open');
+  header.classList.toggle('menu-open');
 });
 

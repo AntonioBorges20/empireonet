@@ -393,6 +393,7 @@ body {
 }
 
 .main-nav ul {
+  list-style: none;
   display: flex;
   gap: 2rem;
 }
@@ -445,9 +446,14 @@ body {
     display: none;
   }
 
-  .main-header.open .main-nav,
-  .main-header.open .header-right {
+  .main-header.menu-open .main-nav,
+  .main-header.menu-open .header-right {
     display: block;
+  }
+
+  .main-header.menu-open .container {
+    background: rgba(0, 0, 0, 0.9);
+    transition: background 0.3s ease;
   }
 
   .main-nav {
@@ -461,7 +467,7 @@ body {
   }
   .main-nav ul {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   .main-nav a {
     font-size: 1.2rem;
@@ -866,24 +872,6 @@ body {
   border-radius: 2px;
 }
 
-.cta-btn {
-  display: inline-block;
-  background: linear-gradient(45deg, #ff4141, #ffee00);
-  color: #000;
-  padding: 1rem 2rem;
-  font-family: 'Stardos Stencil', serif;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 50px;
-  box-shadow: 0 6px 20px rgba(255, 65, 65, 0.6);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-decoration: none;
-}
-.cta-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 28px rgba(255, 65, 65, 0.8);
-}
 
 @media (max-width: 768px) {
   .cta {
