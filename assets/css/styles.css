@@ -1099,6 +1099,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
+
 .social-icons {
   display: flex;
   gap: 1rem;
@@ -1113,6 +1114,10 @@ body {
 .social-icons a:hover {
   color: gold;
   transform: translateY(-2px);
+}
+
+.senior-img {
+  width: 100px;
 }
 
 /* Modal */
